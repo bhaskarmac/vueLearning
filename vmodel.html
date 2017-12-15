@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue learning</title>
+	<script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<p v-show="!title">
+				Please fill the title:
+			</p>
+
+			<input type="text" name="title" v-model="title">
+
+			<button type="submit" v-show="title">
+				Submit
+			</button>
+		</form>
+	</div>
+	<script src="js/vmodel.js"></script>
+</body>
+</html>
