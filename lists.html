@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue js</title>
+	<script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<p>	Direct print </p>
+		{{ fruits }}
+
+		<br>
+		<p> Printing with v-for </p>
+		<ul>
+			<li v-for="fname in fruits"> {{ fname }}</li>
+		</ul>
+
+		<p> Printing with v-text </p>
+		<ul>
+			<li v-for="fname in fruits" v-text="fname"></li>
+		</ul>
+
+	</div>
+
+	<script>
+		new Vue({
+			el: '#app',
+
+			data: {
+				fruits: ['apple', 'mango', 'grapefruit', 'orange']
+			}
+		});
+	</script>
+</body>
+</html>
