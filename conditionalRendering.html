@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue learning</title>
+	<script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<li v-for="i in 10">{{ i }}</li>
+		</ul>
+	</div>
+
+	<script>
+		new Vue({
+			el: '#app',
+		})
+	</script>
+</body>
+</html>
