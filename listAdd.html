@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue js</title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<input type="text" id="txtName">
+		<button id="btnAddName">Add</button>
+		<br>
+		<p> List </p>
+		<ul>
+			<li v-for="fname in fruits"> {{ fname }}</li>
+		</ul>
+
+	</div>
+	<script src="js/listAdd.js"></script>
+</body>
+</html>
